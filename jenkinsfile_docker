@@ -45,7 +45,9 @@ pipeline{
 		        withCredentials([string(credentialsId: 'docker_password', variable: 'docker_password')]) {  
 				  sh 'docker login -u keesarasanthosh -p $docker_password'
 				  sh 'docker push keesarasanthosh/dockerci:$Docker_tag'
-			}
+			             }
                        }
                     }
                  }
+        }
+}
