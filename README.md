@@ -12,3 +12,5 @@ and build the instruction .
 
 Deploy ```target/WebApp.war``` on Tomcat properly for better experience.
 
+This is to check webhooks for both Sonar and as well as GitHub
+
