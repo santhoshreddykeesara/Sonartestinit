@@ -4,8 +4,6 @@
     copy:
       src: deployment.yaml
       dest: /home/ubuntu/deployments/
-  - name: delete the previous of kubernetes objects 
-    shell: kubectl delete -f /home/ubuntu/deployments/deployment.yaml
   - name: Create a Deployment by reading the definition from a local file
     shell: kubectl apply -f /home/ubuntu/deployments/deployment.yaml
       
