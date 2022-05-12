@@ -3,7 +3,7 @@
   - name: copy deployment file to kubernetes master 
     copy:
       src: deployment.yaml
-      dest: /ubuntu/
+      dest: /ubuntu/deployments/
   - name: Create a Deployment by reading the definition from a local file
-    command: kubectl apply -f /ubuntu/deployment.yaml
+    command: kubectl apply -f /ubuntu/deployments/deployment.yaml
       
