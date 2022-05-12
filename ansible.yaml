@@ -5,5 +5,5 @@
       src: deployment.yaml
       dest: /home/ubuntu/deployments/
   - name: Create a Deployment by reading the definition from a local file
-    command: kubectl apply -f "/home/ubuntu/deployments/deployment.yaml"
+    shell: kubectl apply -f /home/ubuntu/deployments/deployment.yaml
       
